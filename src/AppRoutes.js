@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 
 import { NotFoundPage, DashboardPage } from "./pages";
 
@@ -11,7 +11,10 @@ const AppRoutes = () => {
       <Routes>
         <Route path={PATH.DASHBOARD} element={<DashboardPage />} />
 
-        <Route path={PATH.NOTFOUND} element={<NotFoundPage />} />
+        <Route
+          path={PATH.NOTFOUND}
+          element={<Navigate to={PATH.DASHBOARD} />}
+        />
       </Routes>
     </>
   );

@@ -1,6 +1,5 @@
-import withLayout from "./Layout";
-import NotFoundComponent from "./NotFound";
+import LayoutComponent from "./Layout";
 
 import DashboardComponent from "./Dashboard";
 
-export { withLayout, NotFoundComponent, DashboardComponent };
+export { LayoutComponent, DashboardComponent };
