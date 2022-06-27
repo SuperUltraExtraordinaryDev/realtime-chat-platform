@@ -1,5 +1,7 @@
-export const slices = {};
+import meSlice, { meActions, meInitialState } from "./me";
 
-export const actions = {};
+export const slices = { me: meSlice.reducer };
 
-export const initialState = {};
+export const actions = { me: meActions };
+
+export const initialState = { me: meInitialState };
