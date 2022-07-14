@@ -1,4 +1,5 @@
 import React from "react";
+import { ToastContainer } from "react-toastify";
 
 import HeaderSection from "./Header";
 import FooterSection from "./Footer";
@@ -12,6 +13,8 @@ const LayoutComponent = ({ children }) => {
       <HeaderSection />
       <div className="pt-16 pb-16 h-full">{children}</div>
       <FooterSection />
+
+      <ToastContainer autoClose={1000} />
     </div>
   );
 };
